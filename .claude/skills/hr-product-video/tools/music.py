@@ -20,7 +20,7 @@ proj = sys.argv[1]
 P = load_project(proj)
 M = P.get('music', {})
 out = os.path.join(proj, 'audio', 'music.mp3')
-if os.path.exists(out) and '--force' not in sys.argv:
+if os.path.exists(out) and os.path.getsize(out) > 0 and '--force' not in sys.argv:
     raise SystemExit('audio/music.mp3 already exists. Add --force to make a new one.')
 length = load_timing(proj)['total'] + 2
 prompt = M.get('prompt', 'Warm, optimistic, modern corporate background music. Soft piano, light plucked synths, gentle pulse, '
@@ -29,5 +29,6 @@ body = {'prompt': prompt, 'music_length_ms': int(length * 1000), 'model_id': M.g
 req = urllib.request.Request('https://api.elevenlabs.io/v1/music?output_format=mp3_44100_128', data=json.dumps(body).encode(),
                              headers={'xi-api-key': api_key(), 'Content-Type': 'application/json'})
 print(f'generating {length:.0f} s of music...')
-open(out, 'wb').write(urllib.request.urlopen(req, timeout=600).read())
+data = urllib.request.urlopen(req, timeout=600).read()   # download first, so a failed request leaves no empty file
+open(out, 'wb').write(data)
 print('wrote', out)

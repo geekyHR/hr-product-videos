@@ -25,7 +25,6 @@ The `.claude` folder is hidden in Finder. Press Command + Shift + . (full stop) 
 3. Install Google Chrome from https://www.google.com/chrome if you do not have it.
 4. Download this repository. In Terminal, paste:
    `cd ~/Documents && git clone https://github.com/geekyHR/hr-product-videos.git && cd hr-product-videos`
-   GitHub will ask you to sign in, because the repository is private.
 5. Install the libraries. In the same Terminal window, paste:
    `npm install && pip3 install -r requirements.txt`
 6. Add your ElevenLabs key. In Finder, open the `hr-product-videos` folder, make a copy of `.env.example` and name it
@@ -64,6 +63,7 @@ Keep long or 4K masters on your computer or in OneDrive, and push the smaller co
 
 ## Keep it safe
 
-- The repository is private. Check before adding company brand files, fonts or intro and outro videos.
+- This repository is public. Keep company brand files, fonts, intro and outro videos, real product screens and
+  briefs on your computer only: add their folders to `.gitignore` before you commit.
 - Never paste an API key into a chat or a file other than `.env`.
 - Videos show fictional employees only, and only product content its owner has confirmed.

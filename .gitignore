@@ -14,5 +14,14 @@ projects/*/out/stills/
 projects/*/audio/voice_raw.*
 *.raw
 
-# Brand folders you do not want online: add them here, e.g.
-# brand/my-company/
+# Company material stays on your computer (this repository is public)
+brand/*
+!brand/_template/
+!brand/README.md
+projects/*
+!projects/_template/
+!projects/README.md
+references/**/*.mp4
+references/**/*.mov
+references/**/*.mp3
+references/**/*.wav

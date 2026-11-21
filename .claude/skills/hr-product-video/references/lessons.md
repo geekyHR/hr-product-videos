@@ -19,8 +19,8 @@ Each rule below fixed a note from the product owner on an HR assistant launch vi
 
 ## Pronunciation
 
-- Spell product names for the voice the way they should sound, and keep them as one unit:
-  "Zense-AI-Neo" with hyphens. "A.I." with full stops made the voice pause as if the sentence ended.
+- Spell product names for the voice the way they should sound, and keep them as one unit with hyphens,
+  for example "Acme-AI-Ava". "A.I." with full stops made the voice pause as if the sentence ended.
 - Write "AI" and "HR" without full stops.
 - For a word with two pronunciations (live, read, lead), pick a phrase where only one reading fits:
   "is now live" was read correctly; "Now live" was not, and "lyve" did not fix it.

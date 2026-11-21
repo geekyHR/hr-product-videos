@@ -1,5 +1,5 @@
 // HR product video engine.
-// A project page loads, in order: gsap.min.js, engine.css, brand.js (window.BRAND), script.js (window.SCRIPT),
+// A project page loads, in order: gsap.min.js (from node_modules), engine.css, brand.js (window.BRAND), script.js (window.SCRIPT),
 // timing.js (window.TIMING, optional), engine.js (this file), the project's scenes.js, then calls E.finish().
 // Everything is driven by window.seek(t), so every frame renders exactly the same each time.
 //

@@ -11,6 +11,6 @@ brand/<org>/
   intro-outro/    the organisation's standard intro and outro videos
 ```
 
-Before you commit a brand folder, check whether this repository is private and who can see it. Brand files, fonts and
+This repository is public. Do not commit company brand folders. Brand files, fonts and
 intro and outro videos are often confidential or licensed. If in doubt, keep them on your computer only and add the
 folder name to `.gitignore`.

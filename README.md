@@ -10,7 +10,7 @@ Owner: Kiran Baby Joseph (geekyHR)
 | Folder | What it holds |
 |---|---|
 | `.claude/skills/hr-product-video/` | The main skill: engine, tools, HR guidance and lessons from a real launch video |
-| `.claude/skills/motion-design/` | A second skill for short, music-led motion graphics (reviewed for safety on 21 November 2026) |
+| `.claude/skills/motion-design/` | A public skill by its original author for short, music-led motion graphics, included unchanged and reviewed for safety on 21 November 2026. All credit to its author |
 | `brand/` | One folder per organisation: colours, fonts, logos, guidelines, intro and outro |
 | `references/` | Reference videos, transitions, music and voice samples |
 | `projects/` | One folder per video, with its brief, script, scenes, audio and finished videos in `out/` |

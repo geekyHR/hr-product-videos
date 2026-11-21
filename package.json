@@ -1,0 +1,12 @@
+{
+  "name": "hr-product-videos",
+  "private": true,
+  "description": "HR product videos built as code with Claude Code",
+  "scripts": {
+    "stills": "node .claude/skills/hr-product-video/tools/render.js",
+    "render": "node .claude/skills/hr-product-video/tools/render.js"
+  },
+  "dependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}

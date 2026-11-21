@@ -1,0 +1,18 @@
+# Secrets: never commit
+.env
+*.key
+
+# Dependencies and caches
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Working files (large, re-creatable)
+projects/*/out/tmp/
+projects/*/out/stills/
+projects/*/audio/voice_raw.*
+*.raw
+
+# Brand folders you do not want online: add them here, e.g.
+# brand/my-company/

@@ -1,0 +1,23 @@
+{
+  "name": "My_HR_Video",
+  "brand": "brand/_template",
+  "shapes": ["land"],
+  "voice": {
+    "source": "elevenlabs",
+    "voice_id": "PASTE_VOICE_ID",
+    "model": "eleven_v3",
+    "lead": 0.4,
+    "scene_gap": 0.6,
+    "end_tail": 1.8,
+    "target_wpm": 178,
+    "max_slow": 0.86
+  },
+  "music": {
+    "prompt": "Warm, optimistic, modern corporate background music. Soft piano, light plucked synths, gentle pulse, about 105 BPM. No vocals. Sits under a narrator, a small lift in the last third, clean resolved ending."
+  },
+  "music_volume": 0.30,
+  "loudness": -16,
+  "intro": { "file": "", "trim_to": null },
+  "outro": { "file": "" },
+  "transition": 0.6
+}

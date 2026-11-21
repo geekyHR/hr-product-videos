@@ -1,0 +1,5 @@
+numpy
+pillow
+scipy
+opencv-python
+faster-whisper   # optional: own-voice timing and transcript checks

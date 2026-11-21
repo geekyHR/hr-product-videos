@@ -1,0 +1,55 @@
+/* HR product video engine: base styles. Brand colours and font come from brand.js as CSS variables. */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: var(--W); height: var(--H); overflow: hidden; background: var(--bg); }
+body { font-family: var(--font), "Inter", "Segoe UI", Arial, sans-serif; color: var(--fg); -webkit-font-smoothing: antialiased; }
+#stage { position: relative; width: var(--W); height: var(--H); overflow: hidden; background: var(--bg); }
+.scene { position: absolute; inset: 0; opacity: 0; }
+.abs { position: absolute; }
+.logo { position: absolute; top: 64px; right: 72px; height: 44px; z-index: 50; }
+.vert .logo { top: 80px; right: 64px; height: 40px; }
+.q-shape { position: absolute; }
+
+/* Headlines: light weight with one bold word. Left aligned, sentence case. */
+.headline { position: absolute; font-weight: 300; line-height: 1.12; letter-spacing: -0.01em; }
+.headline b { font-weight: 600; }
+.land .headline { left: 120px; top: 300px; width: 700px; font-size: 76px; }
+.vert .headline { left: 80px; top: 240px; width: 920px; font-size: 78px; }
+.title { position: absolute; font-weight: 300; line-height: 1.05; }
+.title b { font-weight: 600; }
+.land .title { left: 120px; top: 300px; font-size: 110px; }
+.vert .title { left: 80px; top: 240px; font-size: 104px; }
+.sub { position: absolute; font-size: 38px; font-weight: 300; opacity: 0.9; }
+.pill { display: inline-block; padding: 10px 22px; border-radius: 40px; background: rgba(255,255,255,0.12); margin-right: 12px; font-size: 30px; }
+
+/* Captions: plain, one line, no punctuation, timed to the first spoken word of each phrase. */
+.captions { position: absolute; z-index: 40; font-weight: 400; line-height: 1.35; text-shadow: 0 2px 12px rgba(0,0,0,0.45); }
+.land .captions { left: 120px; top: 900px; width: 760px; font-size: 36px; }
+.vert .captions { left: 80px; top: 1660px; width: 920px; font-size: 44px; }
+
+/* Generic chat window (Teams-like, dark). Use fictional people only. */
+.chat { position: absolute; background: #1f1f1f; border-radius: 18px; overflow: hidden; box-shadow: 0 40px 120px rgba(0,0,0,0.45);
+        font-family: "Segoe UI", "Inter", sans-serif; color: #fff; }
+.land .chat { left: 900px; top: 150px; width: 900px; height: 780px; }
+.vert .chat { left: 60px; top: 560px; width: 960px; height: 1040px; }
+.c-head { height: 84px; display: flex; align-items: center; gap: 18px; padding: 0 28px; background: #2a2a2a; border-bottom: 1px solid #3a3a3a; }
+.c-head img { width: 48px; height: 48px; border-radius: 50%; background: #fff; object-fit: cover; }
+.c-head .name { font-size: 26px; font-weight: 700; }
+.c-body { position: absolute; left: 0; right: 0; top: 84px; bottom: 110px; overflow: hidden; }
+.c-scroll { position: absolute; left: 0; right: 0; top: 0; padding: 28px; }
+.qb { margin-left: auto; width: max-content; max-width: 80%; background: #2b2b40; border-radius: 10px; padding: 16px 22px; font-size: 23px; opacity: 0; }
+.ans { display: flex; gap: 16px; margin-top: 24px; }
+.ans > img { width: 44px; height: 44px; border-radius: 50%; background: #fff; flex: none; object-fit: cover; }
+.meta { font-size: 18px; color: #aaa; margin-bottom: 8px; }
+.card { background: #292929; border-radius: 10px; padding: 20px 24px; font-size: 21px; line-height: 1.45; }
+.card h4 { font-size: 22px; margin-bottom: 8px; }
+.card ul, .card ol { padding-left: 28px; }
+.card li { margin: 5px 0; }
+.card hr { border: 0; border-top: 1px solid #444; margin: 14px 0; }
+.card a { color: #7f85f5; text-decoration: underline; }
+.card table { border-collapse: collapse; width: 100%; font-size: 19px; margin-top: 8px; }
+.card td, .card th { border: 1px solid #555; padding: 4px 10px; text-align: left; }
+.c-input { position: absolute; left: 24px; right: 24px; bottom: 24px; height: 64px; border-radius: 8px; background: #2d2d2d;
+           border-bottom: 3px solid #7f85f5; display: flex; align-items: center; padding: 0 22px; font-size: 22px; color: #999; }
+.c-input .typed { color: #fff; }
+.caret { display: inline-block; width: 2px; height: 26px; background: #fff; margin-left: 2px; }
+.r { opacity: 0; }

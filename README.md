@@ -68,6 +68,12 @@ Keep long or 4K masters on your computer or in OneDrive, and push the smaller co
 - Never paste an API key into a chat or a file other than `.env`.
 - Videos show fictional employees only, and only product content its owner has confirmed.
 
+## Motion templates
+
+The video engine includes seven motion templates (`E.fx`): big type, text reveal, card fan, photo collage, number roll,
+focus cards and wipe. They are original code. See `.claude/skills/hr-product-video/references/motion-library.md` and
+the demo in `projects/_motion-demo`.
+
 ## License
 
 MIT, see `LICENSE`. You may use, change and share this repository freely. The folder `.claude/skills/motion-design/`

@@ -17,6 +17,7 @@ note the product owner gave. Read it before you build.
 |---|---|
 | Always, before the script | `references/hr-context.md` (HR areas, audience, tone, sensitive topics) |
 | Always, before building | `references/lessons.md` (voice, timing, captions, pronunciation, QC) |
+| Before building scenes | `references/motion-library.md` (the seven `E.fx` motion templates) |
 | Before release | `references/qc-checklist.md` |
 | A 3D or motion-heavy piece with no narration | the `motion-design` skill in this repository instead |
 

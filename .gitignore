@@ -19,9 +19,11 @@ brand/*
 !brand/_template/
 !brand/README.md
 projects/*
-!projects/_template/
+!projects/_template
+!projects/_motion-demo/
 !projects/README.md
 references/**/*.mp4
 references/**/*.mov
 references/**/*.mp3
 references/**/*.wav
+projects/_motion-demo/out/
